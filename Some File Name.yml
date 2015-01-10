@@ -10,7 +10,7 @@ Children:
   - Name: Shooter
     Base: Subsystem
     Children:
-    - Name: CAN Jaguar 1
+    - Name: Shooter1
       Base: CAN Jaguar
       Children: []
       Properties:
