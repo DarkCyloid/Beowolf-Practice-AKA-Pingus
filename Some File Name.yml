@@ -1,7 +1,7 @@
 Version 0.0.2
 
 ---
-Name: Beowolf Practice
+Name: Beowolf Practice AKA Pingus
 Base: Robot
 Children:
 - Name: Subsystems
