@@ -14,7 +14,7 @@
 #include "ShooterOn.h"
 #include "IntakeOn.h"
 #include "ConveyorOn.h"
-
+#include "DelayBeforeShoot.h"
 
 Autonomous::Autonomous() {
 	// Add Commands here:
@@ -37,5 +37,8 @@ Autonomous::Autonomous() {
 	AddParallel(new ShooterOn());
 	AddSequential(new IntakeOn());
 	AddSequential(new ConveyorOn());
-	
+	AddSequential(new DelayBeforeShoot());
+	AddSequential(new ConveyorOn());
+	AddSequential(new DelayBeforeShoot());
+	AddSequential(new ConveyorOn());
 }
